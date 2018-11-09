@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "safari": 9,
+          "chrome": 39
+        },
+        "modules": false,
+        "useBuiltIns": "usage"
+      }
+    ],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime", {
+        "corejs": 2
+      }
+    ],
+    "react-hot-loader/babel",
+    "@babel/plugin-syntax-dynamic-import"
+  ]
+}
